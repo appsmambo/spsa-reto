@@ -4,7 +4,9 @@
       <div class="card-body">
         <h5 class="card-title text-primary text-left">{{ post.title }}</h5>
         <p class="card-text text-justify">{{ post.body }}</p>
-        <a href="#" class="btn btn-info">Ver comentarios</a>
+        <router-link :to="{ name: 'ver-comentarios', params: { postId: post.id}}" class="btn btn-info">
+          Ver comentarios
+        </router-link>
       </div>
     </div>
   </div>
