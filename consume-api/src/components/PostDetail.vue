@@ -1,17 +1,17 @@
 <template>
   <section>
-    <h1 class="text-primary text-left">
+    <h2 class="text-primary text-left">
       {{ post.title }}
-    </h1>
+    </h2>
     <p class="text-left">
       {{post.body}}
     </p>
-    <h2 class="text-info text-left">
+    <h3 class="text-info text-left">
       Comments <small>({{ comments.length }})</small>
       <a class="button is-primary is-loading" v-if="loading.comments">
         ...
       </a>
-    </h2>
+    </h3>
     <comment v-for="comment in comments" v-bind:key="comment" :comment="comment"></comment>
   </section>
 </template>

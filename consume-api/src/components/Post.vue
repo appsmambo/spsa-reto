@@ -1,5 +1,5 @@
 <template>
-  <div class="col-3 mb-4">
+  <div class="col-12 col-md-6 col-lg-3 mb-4">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title text-primary text-left">{{ post.title }}</h5>
